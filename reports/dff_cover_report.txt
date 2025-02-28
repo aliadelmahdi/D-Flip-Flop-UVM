@@ -1,0 +1,116 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /DFF_coverage_pkg
+=== Design Unit: work.DFF_coverage_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          3        na        na        na
+            Covergroup Bins          6         6         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /DFF_coverage_pkg/DFF_coverage/dff_cov_grp      100.00%        100          -    Covered              
+    covered/total bins:                                     6          6          -                      
+    missing/total bins:                                     0          6          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin d_zero                                       4987          1          -    Covered              
+        bin d_one                                        5014          1          -    Covered              
+    Coverpoint #coverpoint__1#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin en_disabled                                   303          1          -    Covered              
+        bin en_enabled                                   9698          1          -    Covered              
+    Coverpoint #coverpoint__2#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rst_inactive                                 9698          1          -    Covered              
+        bin rst_active                                    303          1          -    Covered              
+ Covergroup instance \/DFF_coverage_pkg::DFF_coverage::dff_cov_grp  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     6          6          -                      
+    missing/total bins:                                     0          6          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin d_zero                                       4987          1          -    Covered              
+        bin d_one                                        5014          1          -    Covered              
+    Coverpoint #coverpoint__1#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin en_disabled                                   303          1          -    Covered              
+        bin en_enabled                                   9698          1          -    Covered              
+    Coverpoint #coverpoint__2#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rst_inactive                                 9698          1          -    Covered              
+        bin rst_active                                    303          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /DFF_coverage_pkg/DFF_coverage/dff_cov_grp      100.00%        100          -    Covered              
+    covered/total bins:                                     6          6          -                      
+    missing/total bins:                                     0          6          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin d_zero                                       4987          1          -    Covered              
+        bin d_one                                        5014          1          -    Covered              
+    Coverpoint #coverpoint__1#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin en_disabled                                   303          1          -    Covered              
+        bin en_enabled                                   9698          1          -    Covered              
+    Coverpoint #coverpoint__2#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rst_inactive                                 9698          1          -    Covered              
+        bin rst_active                                    303          1          -    Covered              
+ Covergroup instance \/DFF_coverage_pkg::DFF_coverage::dff_cov_grp  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     6          6          -                      
+    missing/total bins:                                     0          6          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin d_zero                                       4987          1          -    Covered              
+        bin d_one                                        5014          1          -    Covered              
+    Coverpoint #coverpoint__1#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin en_disabled                                   303          1          -    Covered              
+        bin en_enabled                                   9698          1          -    Covered              
+    Coverpoint #coverpoint__2#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rst_inactive                                 9698          1          -    Covered              
+        bin rst_active                                    303          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 100.00%
+

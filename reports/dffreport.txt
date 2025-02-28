@@ -1,0 +1,118 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\tb_top#DUT 
+=== Design Unit: work.DFF
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         4         4         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\tb_top#DUT 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File design/DFF.sv
+------------------------------------IF Branch------------------------------------
+    18                                      7756     Count coming in to IF
+    18              1                        301         if(rst)                 // If reset is active, set Q to 0
+    20              1                       7455         else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                      7455     Count coming in to IF
+    21              1                       7162                 if(en)          // If enable is high, store D in Q
+    23              1                        293                 else            // If enable is low, retain the current value of Q
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+
+Directive Coverage:
+    Directives                       2         2         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\tb_top#DUT /cover__1                   DFF    Verilog  SVA  design/DFF.sv(29)
+                                                                              4844 Covered   
+/\tb_top#DUT /cover__0                   DFF    Verilog  SVA  design/DFF.sv(28)
+                                                                              4705 Covered   
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       8         8         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\tb_top#DUT  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File design/DFF.sv
+    2                                                module DFF (DFF_if dff_if);
+    3                                                    logic clk;          // Clock signal
+    4                                                    logic rst;          // Reset signal (active high)
+    5                                                    logic d;            // D input (data to be stored)
+    6                                                    logic en;           // Enable signal
+    7                                                    logic q;            // Output Q (stores the value of D)
+    8                                                
+    9               1                      20003         assign clk = dff_if.clk;
+    10              1                        590         assign rst = dff_if.rst;
+    11              1                       5004         assign d = dff_if.d;
+    12              1                        599         assign en = dff_if.en;
+    13                                               
+    14                                                   assign dff_if.q = q;
+    15                                               
+    16                                               // Sequential block triggered on the rising edge of the clock
+    17              1                       7756     always @(posedge clk) begin
+    18                                                   if(rst)                 // If reset is active, set Q to 0
+    19              1                        301             q <= 1'b0;
+    20                                                   else begin
+    21                                                           if(en)          // If enable is high, store D in Q
+    22              1                       7162                     q <= d;
+    23                                                           else            // If enable is low, retain the current value of Q
+    24              1                        293                     q <= q;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         10        10         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\tb_top#DUT  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                               clk           1           1      100.00 
+                                                 d           1           1      100.00 
+                                                en           1           1      100.00 
+                                                 q           1           1      100.00 
+                                               rst           1           1      100.00 
+
+Total Node Count     =          5 
+Toggled Node Count   =          5 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (10 of 10 bins)
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\tb_top#DUT /cover__1                   DFF    Verilog  SVA  design/DFF.sv(29)
+                                                                              4844 Covered   
+/\tb_top#DUT /cover__0                   DFF    Verilog  SVA  design/DFF.sv(28)
+                                                                              4705 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 2
+
+Total Coverage By Instance (filtered view): 100.00%
+
