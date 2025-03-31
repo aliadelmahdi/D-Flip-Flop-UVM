@@ -5,6 +5,5 @@ add wave /tb_top/DUT/*
 coverage save top.ucdb -onexit -du work.DFF
 run -all
 coverage report -detail -cvg -directive -comments -output reports/dff_cover_report.txt /DFF_coverage_pkg/DFF_coverage/dff_cov_grp
-coverage exclude -src design/DFF.sv -line 32 -code s -code b
 quit -sim
 vcover report top.ucdb -details -annotate -all -output reports/dffreport.txt
